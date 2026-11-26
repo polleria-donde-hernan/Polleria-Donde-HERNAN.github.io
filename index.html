@@ -203,6 +203,14 @@
     .hero-faith{ position:absolute; left:clamp(64px, 7vw, 112px); top:62%; margin:0; text-align:left; }
   }
 
+  @media (max-width:767px){
+    .hero-faith{ align-self:flex-start; margin-top:18px; text-align:left; }
+    .hero-faith span{ display:block; }
+  }
+  @media (max-width:767px) and (min-height:540px){
+    .hero-faith{ position:absolute; left:1.25rem; bottom:28%; margin:0; }
+  }
+
   .scroll-cue{ display:flex; flex-direction:column; align-items:center; gap:10px; font-size:10px; letter-spacing:.36em; text-transform:uppercase; color:var(--muted); }
   .scroll-cue .bar{ width:1px; height:46px; background:rgba(243,237,228,.15); position:relative; overflow:hidden; }
   .scroll-cue .bar::after{ content:""; position:absolute; left:0; top:-46px; width:1px; height:46px; background:var(--gold); animation:cue 2s var(--ease) infinite; }
@@ -631,7 +639,7 @@
           <span class="line" aria-hidden="true">DONDE</span><span class="line" aria-hidden="true">HERNAN</span>
         </h1>
         <p class="hero-sub mt-5 md:mt-7 hero-fade">El arte del fuego lento y la brasa perfecta</p>
-        <p class="hero-faith hero-fade">Nunca fue suerte. Siempre fue Dios.</p>
+        <p class="hero-faith hero-fade"><span>Nunca fue suerte.</span> <span>Siempre fue Dios.</span></p>
 
         <div class="absolute left-5 md:left-16 lg:left-24 bottom-[9vh] text-left hero-fade">
           <p class="sec-label">Sección 01<strong>El Fuego</strong></p>
